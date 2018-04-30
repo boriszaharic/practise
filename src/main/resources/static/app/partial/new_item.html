@@ -1,0 +1,32 @@
+<div ng-controller="newItemCtrl">
+	<div>
+		<form>
+			<div class="form-group">
+				<label for="a1">Name</label> <input type="text" class="form-control"
+					id="a1" ng-model="newItem.name">
+			</div>
+			<div class="form-group">
+				<label for="c1">Order number</label> <input type="text"
+					class="form-control" id="c1" ng-model="newItem.orderNumber">
+			</div>
+			<div class="form-group">
+				<label for="d1">Category</label> <input type="text"
+					class="form-control" id="d1" ng-model="newItem.category">
+			</div>
+			<div class="form-group">
+				<label for="e1">Value</label> <input type="text"
+					class="form-control" id="e1" ng-model="newItem.value">
+			</div>
+			<div class="form-group">
+				<label for="f1">Description</label> <input type="text"
+					class="form-control" id="f1" ng-model="newItem.description">
+			</div>
+			<div class="form-group">
+				<label for="g1">Barcode</label> <input type="text"
+					class="form-control" id="g1" ng-model="newItem.barcode">
+			</div>
+
+			<button class="btn btn-primary" ng-click="addItem()">ADD</button>
+		</form>
+	</div>
+</div>

@@ -1,0 +1,24 @@
+<div ng-controller="newCompanyCtrl">
+	<div>
+		<form>
+			<div class="form-group">
+				<label for="a1">Name</label> <input type="text" class="form-control"
+					id="a1" ng-model="newCompany.name">
+			</div>
+			<div class="form-group">
+				<label for="c1">Address</label> <input type="text"
+					class="form-control" id="c1" ng-model="newCompany.address">
+			</div>
+			<div class="form-group">
+				<label for="d1">Valid licence till</label> <input type="text"
+					class="form-control" id="d1" ng-model="newCompany.validLicenceTill">
+			</div>
+			<div class="form-group">
+				<label for="e1">Contact person</label> <input type="text"
+					class="form-control" id="e1" ng-model="newCompany.contactPerson">
+			</div>
+
+			<button class="btn btn-primary" ng-click="addCompany()">ADD</button>
+		</form>
+	</div>
+</div>

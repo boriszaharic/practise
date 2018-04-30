@@ -1,0 +1,32 @@
+<div ng-controller="editUserCtrl">
+	<div>
+		<form>
+			<div class="form-group">
+				<label for="a1">Name</label> <input type="text" class="form-control"
+					id="a1" ng-model="updatedUser.firstName">
+			</div>
+			<div class="form-group">
+				<label for="b1">Last name</label> <input type="text" class="form-control"
+					id="b1" ng-model="updatedUser.lastName">
+			</div>
+			<div class="form-group">
+				<label for="c1">Email</label> <input type="text"
+					class="form-control" id="c1" ng-model="updatedUser.email">
+			</div>
+			<div class="form-group">
+				<label for="d1">Password</label> <input type="text"
+					class="form-control" id="d1" ng-model="updatedUser.password">
+			</div>
+			<div class="form-group">
+				<label for="e1">Company</label> <input type="text"
+					class="form-control" id="e1" ng-model="updatedUser.company">
+			</div>
+			<div class="form-group">
+				<label for="f1">Roles</label> <input type="text"
+					class="form-control" id="f1" ng-model="updatedUser.roles">
+			</div>
+
+			<button class="btn btn-primary" ng-click="edit()">UPDATE</button>
+		</form>
+	</div>
+</div>

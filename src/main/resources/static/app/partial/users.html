@@ -1,0 +1,41 @@
+<div ng-controller="usersCtrl">
+	<div class="jumbotron">
+		<h4>List of users</h4>
+	</div>
+
+	<div class="btn-group pull-right">
+		<button ng-click="changePage(-1)" ng-disabled="pageNum==0"
+			class="btn btn-primary">Previous page</button>
+		<button ng-click="changePage(1)" ng-disabled="!(pageNum<totalPages-1)"
+			class="btn btn-primary">Next page</button>
+	</div>
+	<div>
+		<table class="table table-bordered table-striped">
+			<thead>
+				<tr>
+					<th>First name</th>
+            		<th>Last name</th>
+            		<th>Email</th>
+            		<th>Password</th>
+            		<th>Company</th>
+            		<th>Roles</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="x in item">
+					<td>{{x.firstName}}</td>
+					<td>{{x.lastName}}</td>
+					<td>{{x.email}}</td>
+					<td>{{x.password}}</td>
+					<td>{{x.company}}</td>
+					<td>{{x.roles}}</td>
+					<td>
+						<button ng-click="deleteUser(x.id)" class="btn btn-danger">Delete</button>
+						<button ng-click="goToEdit(x.id)" class="btn btn-warning">Update</button>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<button ng-click="goToAdd()" class="btn btn-warning">ADD</button>
+	</div>
+</div>
